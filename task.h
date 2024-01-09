@@ -13,6 +13,8 @@ private:
     team team_Respons_the_task;
 
 public:
+    task(QString _name , user _user_respon);
+    task(QString _name , team _team_respon);
     QString get_name_of_task();
     void set_name_of_task(QString _name);
     user get_uer_Respons_the_task();

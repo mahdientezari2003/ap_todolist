@@ -36,3 +36,22 @@ void organization::delete_team_of_organ(team _team){
 }
 
 }
+
+void organization::delete_project_from_organ(project pro){
+    for(int i=0 ; i<projects_of_organ.size() ; i++ ){
+        if(projects_of_organ[i] == pro ){
+            projects_of_organ.erase(projects_of_organ.begin()+i);
+
+        }
+}
+}
+void organization::add_project_to_organ(project pro){
+    this->projects_of_organ.push_back(pro);
+}
+
+organization::organization(user creator_organ , QString _name_of_organ):head_of_organ(creator_organ){
+    member_of_organ.push_back(creator_organ);
+    name_of_organ = _name_of_organ;
+
+
+}
