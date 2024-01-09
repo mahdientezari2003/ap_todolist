@@ -3,18 +3,22 @@
 
 
 #include <QMainWindow>
+
+
 #include <QString>
+
+
 class user{
 private:
-   QString name;
-   QString username;
-   QString password;
-   QString email;
+   QString name ="";
+   QString username = "";
+   QString password= "";
+   QString email= "";
 
 
 public:
    user(QString _name, QString _username, QString _password, QString _email) ;
-
+user();
    QString get_Name();
    QString get_username();
    QString get_password();
