@@ -10,26 +10,33 @@ CONFIG += c++17
 
 SOURCES += \
     dialog_signup.cpp \
+    firstpage.cpp \
     main.cpp \
     mainwindow.cpp \
     organization.cpp \
     project.cpp \
+    task.cpp \
     team.cpp \
+    team_management.cpp \
     user.cpp
 
 HEADERS += \
     data.h \
     dialog_signup.h \
+    firstpage.h \
     mainwindow.h \
     organization.h \
     project.h \
     task.h \
     team.h \
+    team_management.h \
     user.h
 
 FORMS += \
     dialog_signup.ui \
-    mainwindow.ui
+    firstpage.ui \
+    mainwindow.ui \
+    team_management.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

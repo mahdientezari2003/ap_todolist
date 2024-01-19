@@ -15,6 +15,7 @@ private:
     QVector<project> projects_of_organ;
     user head_of_organ;
 public:
+    organization();
     organization(user creator_organ,QString _name_of_organ);
     void delete_project_from_organ(project pro);
 void add_project_to_organ(project pro);

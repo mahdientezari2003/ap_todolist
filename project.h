@@ -13,6 +13,7 @@ private:
     QVector<task> task_of_project;
 
 public:
+    project();
     project(QString _name);
     void set_name_of_project(QString n);
     QString get_name_of_project();

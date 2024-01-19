@@ -12,7 +12,7 @@ private:
     user head_of_team;
 
 public:
-
+team();
     void set_name_of_team(QString _new_team_name);
     void add_member(user new_member);
     void delete_member(user _member);

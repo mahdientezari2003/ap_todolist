@@ -5,7 +5,12 @@
 #include <QMainWindow>
 
 
+
+
+
+#include <QVector>
 #include <QString>
+//#include "task.h"
 
 
 class user{
@@ -14,6 +19,8 @@ private:
    QString username = "";
    QString password= "";
    QString email= "";
+  //QVector<task> private_task;
+
 
 
 public:

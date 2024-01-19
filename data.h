@@ -10,6 +10,8 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include "user.h"
+#include "team.h"
+#include "organization.h"
 
 using namespace std;
 
@@ -20,7 +22,8 @@ class Data
 private:
     static QVector<user>::iterator it;
     static QVector<user> members;
-
+    static QVector<team> teams;
+    static QVector<organization> organs;
 public:
     static void set_iterator(QVector<user>::iterator _it){ it=_it; }
 

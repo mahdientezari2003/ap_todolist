@@ -10,6 +10,8 @@
 
 QVector<user>::iterator Data::it;
 QVector<user> Data::members;
+ QVector<team> Data::teams;
+ QVector<organization> Data::organs;
 
 int main(int argc, char *argv[])
 {

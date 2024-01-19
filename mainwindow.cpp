@@ -3,6 +3,8 @@
 #include "dialog_signup.h"
 #include <QMessageBox>
 #include "data.h"
+#include "firstpage.h"
+#include "ui_firstpage.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -38,8 +40,9 @@ void MainWindow::on_SignInBtn_clicked()
                 Data::set_iterator(Data::get_players().begin() + i);
                 this->close();
 
+                firstpage *f = new firstpage();
+                f->show();
 
-                //open new ui
 
 
                 return;
