@@ -40,6 +40,7 @@ void MainWindow::on_SignInBtn_clicked()
                 Data::set_iterator(Data::get_players().begin() + i);
                 this->close();
 
+                Data::get_onlineId() = ui->usernameInput->text();
                 firstpage *f = new firstpage();
                 f->show();
 

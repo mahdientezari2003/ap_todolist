@@ -19,3 +19,9 @@ void firstpage::on_pushButton_2_clicked()
     t->show();
 }
 
+
+void firstpage::on_task_group_clicked()
+{
+
+}
+

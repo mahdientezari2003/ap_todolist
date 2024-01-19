@@ -25,3 +25,7 @@ bool project::operator==(project pro){
 project::project(QString _name){
     name_of_project = _name;
 }
+
+QString get_usrname_of_creator(){
+
+}

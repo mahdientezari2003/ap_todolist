@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dialog_add_task.cpp \
     dialog_signup.cpp \
     firstpage.cpp \
     main.cpp \
@@ -16,26 +17,31 @@ SOURCES += \
     organization.cpp \
     project.cpp \
     task.cpp \
+    task_manegment.cpp \
     team.cpp \
     team_management.cpp \
     user.cpp
 
 HEADERS += \
     data.h \
+    dialog_add_task.h \
     dialog_signup.h \
     firstpage.h \
     mainwindow.h \
     organization.h \
     project.h \
     task.h \
+    task_manegment.h \
     team.h \
     team_management.h \
     user.h
 
 FORMS += \
+    dialog_add_task.ui \
     dialog_signup.ui \
     firstpage.ui \
     mainwindow.ui \
+    task_manegment.ui \
     team_management.ui
 
 # Default rules for deployment.

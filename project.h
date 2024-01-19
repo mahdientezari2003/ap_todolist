@@ -9,6 +9,7 @@
 #include "task.h"
 class project {
 private:
+    QString username_of_creator;
     QString name_of_project;
     QVector<task> task_of_project;
 
@@ -19,7 +20,10 @@ public:
     QString get_name_of_project();
     void add_task_to_project(task t);
     bool operator==(project pro);
-
+    void set_username_of_creator(QString _user){
+        username_of_creator = _user;
+    }
+QString get_usrname_of_creator();
 };
 
 #endif // PROJECT_H

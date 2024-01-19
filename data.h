@@ -12,7 +12,7 @@
 #include "user.h"
 #include "team.h"
 #include "organization.h"
-
+#include "task.h"
 using namespace std;
 
 
@@ -20,20 +20,53 @@ class Data
 {
 
 private:
-    static QVector<user>::iterator it;
+    static QString onlineId;
+    static QString::iterator itonlineId;
+
+    static QVector<user>::iterator ituser;
+    static QVector<team>::iterator itteam;
+    static QVector<project>::iterator itpro;
+    static QVector<organization>::iterator itorgan;
+    static QVector<task>::iterator ittask;
+
+
     static QVector<user> members;
     static QVector<team> teams;
+    static QVector<task> tasks;
     static QVector<organization> organs;
+    static QVector<project> projects;
 public:
-    static void set_iterator(QVector<user>::iterator _it){ it=_it; }
+    static void set_iterator(QVector<user>::iterator _it){ ituser=_it; }
+static void set_iterator(QVector<team>::iterator _it){ itteam=_it; }
+    static void set_iterator(QVector<project>::iterator _it){ itpro=_it; }
+    static void set_iterator(QVector<organization>::iterator _it){ itorgan=_it; }
+    static void set_iterator(QVector<task>::iterator _it){ ittask=_it; }
 
-    static QVector<user>::iterator& get_iterator(){ return it; }
+
+
+    static QVector<user>::iterator& get_iterator_user(){ return ituser; }
+static QVector<team>::iterator& get_iterator_team(){ return itteam; }
+    static QVector<project>::iterator& get_iterator_pro(){ return itpro; }
+    static QVector<organization>::iterator& get_iterator_organ(){ return itorgan; }
+    static QVector<task>::iterator& get_iterator_task(){ return ittask; }
+
 
     static void set_players(QVector<user>& _players){ members=_players; }
+static void set_project(QVector<project>& _players){ projects =_players; }
+static void set_team(QVector<team>& _players){ teams=_players; }
+static void set_organ(QVector<organization>& _players){ organs =_players; }
+static void set_task(QVector<task>& _players){ tasks=_players; }
+
 
     static QVector<user>& get_players() { return members ; }
+static QVector<team>& get_teams() { return teams ; }
+static QVector<organization>& get_organs() { return organs ; }
+static QVector<project>& get_projects() { return projects ; }
+static QVector<task>& get_tasks() { return tasks ; }
 
 
+static QString& get_onlineId() { return onlineId ; }
+static void set_onlineId(QString _onl){ onlineId=_onl; }
     /*
 public:
     static void set_iterator(QVector<Player>::iterator _it){ it=_it; }

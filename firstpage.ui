@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="ptivate_tasks_group">
+   <widget class="QGroupBox" name="my_task_group">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -26,7 +26,7 @@
     <property name="title">
      <string>my tasks</string>
     </property>
-    <widget class="QListWidget" name="listWidget">
+    <widget class="QListWidget" name="mytask_view">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -36,7 +36,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="add_task_to_archive_btn">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -49,7 +49,7 @@
       <string>add to archive</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="task_to_archive_input">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -60,7 +60,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="manegement_group">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -72,7 +72,7 @@
     <property name="title">
      <string>manegment</string>
     </property>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="teams_btn">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -85,7 +85,7 @@
       <string>teams</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="organ_group">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -98,7 +98,7 @@
       <string>organizations</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="project_group">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -111,7 +111,7 @@
       <string>projects </string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="task_group">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -125,26 +125,49 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QGroupBox" name="mytasks_group">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>550</x>
       <y>30</y>
-      <width>201</width>
+      <width>211</width>
       <height>491</height>
      </rect>
     </property>
     <property name="title">
      <string>archive </string>
     </property>
-    <widget class="QListView" name="listView">
+    <widget class="QListView" name="archive_task_btn">
      <property name="geometry">
       <rect>
-       <x>15</x>
+       <x>20</x>
        <y>31</y>
        <width>171</width>
-       <height>441</height>
+       <height>351</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="turn_over_to_my_tasks_input">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>400</y>
+       <width>171</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="turn_over_to_my_tasks_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>171</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>turn over to my tasks</string>
      </property>
     </widget>
    </widget>
